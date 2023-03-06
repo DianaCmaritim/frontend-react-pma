@@ -17,7 +17,7 @@ const CreateProject = ({ onCreateProject }) => {
   const handleCreate = (e) => {
     e.preventDefault();
     // Create a new project using the API
-    fetch('http://localhost:9292/projects', {
+    fetch('https://prt-mngt-backend.onrender.com/projects', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ const CreateProject = ({ onCreateProject }) => {
 
   useEffect(() => {
     // Fetch list of users from the API
-    fetch('http://localhost:9292/users')
+    fetch('https://prt-mngt-backend.onrender.com/users')
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.log(error));

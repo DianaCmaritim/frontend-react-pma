@@ -11,7 +11,7 @@ const RegistrationForm = () => {
   const handleSubmit = async (event) => {
   event.preventDefault();
 
-  const response = await fetch('http://localhost:9292/users', {
+  const response = await fetch('https://prt-mngt-backend.onrender.com/users', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

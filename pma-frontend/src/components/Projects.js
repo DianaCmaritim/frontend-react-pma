@@ -9,7 +9,7 @@ const Projects = () => {
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const response = await fetch('http://localhost:9292/projects');
+        const response = await fetch('https://prt-mngt-backend.onrender.com/projects');
         const data = await response.json();
         setProjects(data);
       } catch (error) {
@@ -19,7 +19,7 @@ const Projects = () => {
 
     async function fetchMembers() {
       try {
-        const response = await fetch('http://localhost:9292/members');
+        const response = await fetch('https://prt-mngt-backend.onrender.com/members');
         const data = await response.json();
         setMembers(data);
       } catch (error) {
@@ -33,7 +33,7 @@ const Projects = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:9292/projects/${id}`, {
+      const response = await fetch(`https://prt-mngt-backend.onrender.com/projects/${id}`, {
         method: 'DELETE'
       });
 
@@ -47,7 +47,7 @@ const Projects = () => {
 
   const handleStatusUpdate = async (id, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:9292/projects/${id}`, {
+      const response = await fetch(`https://prt-mngt-backend.onrender.com/projects/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
