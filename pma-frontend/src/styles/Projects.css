@@ -1,0 +1,62 @@
+.projects {
+    padding: 20px;
+  }
+
+  .projects h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .projects_display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 20px;
+    align-items:flex-end;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 400px;
+  }
+
+  .project p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .buttons button {
+    background-color: #171027;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .members {
+    margin-top: 10px;
+  }
+
+  .members h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .members p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }

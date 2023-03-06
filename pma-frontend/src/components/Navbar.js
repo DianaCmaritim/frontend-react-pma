@@ -1,14 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "../styles/Navbar.css";
+import nav from "../img/nav.png"
 
-function LandingPage() {
+const Navbar = () => {
   return (
-    <div className="landing">
-      <h1>Welcome to the Project Management System</h1>
-        <Link to="/projects">View Projects</Link>
-        <Link to="/create-project">Create a New Project</Link>
-    </div>
-  );
-}
+    <nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        {/* <li><Link to="/Projects">Projects</Link></li>
+        <li><Link to="/RegistrationForm">Signup</Link></li>
+        <li><Link to="/LoginForm">Login</Link></li> */}
+        <img src={nav} alt="My Logo" className="logo" />
 
-export default LandingPage;
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
